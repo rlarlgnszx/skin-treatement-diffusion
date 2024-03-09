@@ -114,21 +114,30 @@ $ jupyternotebook
         - **실패**
 - 방법 3. yolo  v8을 통한 얼굴부위 별 검출을 통해 얼굴 부위펼 평균값을 통해 각 얼굴부위의 중앙값을 판별하고 중앙값들의 차이를 통해 가로선과 세로선으로 구분해 반으로 slice
 ![image](https://github.com/rlarlgnszx/skin-treatement-diffusion/assets/40743105/73087de5-a2cb-4177-a0f2-1bd92f1f7da0)
-### 4. If image has more than two face, use
+![image](https://github.com/rlarlgnszx/skin-treatement-diffusion/assets/40743105/f84790cd-71f9-4c01-9de0-309e91a1d9f1)
+
+### 5. Making Face Landmark Mask
+
 ```
-$ jupyternotebook
-# finetuning_yolo8.ipynb
-# split_with_yolov8.ipynb
+$ face_landmakr.ipynb => key index setting
+# from meta facelandmrk_keypoints
+```
+
+### 6. Training And run demo
+
+```
+$ jupyternotebook Stable_diffusiion_with_skin_treatment.ipynb
+$ streamlit run app.py
+
 ```
 
 
-### 3.Upload folder
-![image](https://user-images.githubusercontent.com/40743105/190638113-737d8ed6-4e88-4721-81e4-38ce90b36c33.png)
+## Result
+![image](https://github.com/rlarlgnszx/skin-treatement-diffusion/assets/40743105/e5f50883-8402-4441-ac41-e4896d8ee2e0)
 
+<hr>
 
-### End. Go to News site And Wait Untill it summary News And detect the Fake News!
+## Demo 
+![image](https://file.notion.so/f/f/e84306da-ad8a-4e53-9a55-417e8babd537/17fc5286-8b69-429a-84ab-0b13345be0e8/app__Streamlit_-_Chrome_2023-11-30_17-10-57.mp4?id=1fe73f70-d28f-4691-ab94-0b694270802f&table=block&spaceId=e84306da-ad8a-4e53-9a55-417e8babd537&expirationTimestamp=1710072000000&signature=zpbjDZDUqXvMmksQWz2TFsyRAql4JVHjgXuhjl7dvMg)
 
-
-백엔드, 크롬익스텐션 부분 = 김기훈
-AI 모델 , 크롤링 = 안제준 
 
